@@ -1,0 +1,21 @@
+{% macro banner(img, alt, title, tag='h2') %}
+<div class="banner-item">
+    <div class="banner-header">
+        {% if tag == 'h1' %}
+            <h1>{{ title }}</h1>
+        {% elif tag == 'h2' %}
+            <h2>{{ title }}</h2>
+        {% elif tag == 'h3' %}
+            <h3>{{ title }}</h3>
+        {% elif tag == 'h4' %}
+            <h4>{{ title }}</h4>
+        {% else %}
+            <h2>{{ title }}</h2>
+        {% endif %}
+    </div>
+
+    {% if img %}
+        {% image ""+img, ""+alt %}
+    {% endif %}
+</div>
+{% endmacro %}

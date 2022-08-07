@@ -1,0 +1,23 @@
+{% import "macros/polyfills.njk" as polyfills %}
+
+{% macro gallery(imgs) %}
+    <div class="gallery margin-auto">
+        <div class="big">
+            {% for img, alt in imgs | reverse %}
+                {% set i = (imgs | length) + 1 - loop.index %}
+                    <input type="radio" id="gal-img-{{ i }}" name="gallery_image" />
+                    {% image img, alt, "", "(max-width: 300px) 300px,
+        (max-width: 600px) 600px,
+        (max-width: 1000px) 1000px,
+        (min-width: 1440px) 1440px", ["300w", "600w", "1000w", "1440w"] %}
+            {% endfor %}
+        </div>
+        <div class="thumbnails flow">
+            {% for img, alt in imgs %}
+                <label for="gal-img-{{ loop.index }}" {{ polyfills.buttonrole()}}>
+                    {% image img, alt, "", "20vw", ["100w", "200w"] %}
+                </label>
+            {% endfor %}
+        </div>
+    </div>
+{% endmacro %}

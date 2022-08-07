@@ -1,0 +1,49 @@
+---
+layout: layout.njk
+title: "Eleventy Starter"
+---
+
+{% import "macros/wave.njk" as wave %}
+
+<div class="flow">
+	<div class="region spot-heading">
+		<div class="flow wrapper">
+			<h1>Eleventy Starter Kit</h1>
+			
+
+			<p>This is an example page made with the Eleventy starter kit. Extending this repo will make it easier and faster to build websites with Eleventy.</p>
+
+			<p>The included CSS methodology is <em>heavily</em> inspired by <a href="https://buildexcellentwebsit.es">Build Excellent Websites by Andy Bell</a></p>
+		</div>
+
+	{{ wave.wave() }}
+	</div>
+</div>
+
+<section class="region">
+	<p>Out of the box, this kit comes preconfigured with:</p>
+
+	<ul>
+		<li>Sensible default styles that are easy to override</li>
+		<li>Fluid type and spacing</li>
+		<li>Helper style classes for Grids and Lists</li>
+		<li>Macros for commonly-used components, such as a Gallery</li>
+	</ul>
+</section>
+
+<section class="region flow wrapper">
+
+	<h2>Grid</h2>
+
+	<ul role="list" class="grid" data-grid="[50 50]">
+		<li class="grid-info">
+			A grid with 50-50 sizing will attempt to fit two columns onto the screen, provided it is wide enough
+		</li>
+		<li class="grid-info">
+			But will automatically wrap the columns if there isn't enough space to display the columns side by side
+		</li>
+		<li class="grid-info">
+			It does this using the repeat() css grid property with auto-fill, and using clamp to fix the column size
+		</li>
+	</div>
+</section>

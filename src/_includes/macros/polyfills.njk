@@ -1,0 +1,6 @@
+{% macro buttonrole() %}
+	role="button" tabindex="0" onkeydown="(function(e) {
+		console.log('this is working');
+		console.log(this);
+	})()"
+{% endmacro %}
