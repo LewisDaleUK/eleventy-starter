@@ -4,16 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build:eleventy",
+    "build": "run-s build:*",
+    "build:css": "npx tailwindcss -i css/main.css -o styles/main.css --postcss",
     "build:eleventy": "npx @11ty/eleventy",
-    "serve": "npx @11ty/eleventy --serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "npm-run-all -p serve:*",
+    "serve:11ty": "npx @11ty/eleventy --serve",
+    "serve:css": "tailwindcss -i css/main.css -o styles/main.css --postcss --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
-    "@11ty/eleventy-img": "^2.0.1"
+    "@11ty/eleventy-img": "^2.0.1",
+    "autoprefixer": "^10.4.12",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.17",
+    "tailwindcss": "^3.1.8"
   }
 }
