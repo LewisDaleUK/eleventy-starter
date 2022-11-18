@@ -9,3 +9,7 @@ Includes:
 * Shortcodes for images and custom categories
   
 The included CSS methodology is _heavily_ inspired by [Build Excellent Websites by Andy Bell](https://buildexcellentwebsit.es)
+
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/lewisdaleuk/eleventy-starter">
+	<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />
+</a>
