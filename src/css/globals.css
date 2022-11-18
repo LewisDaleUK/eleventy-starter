@@ -71,6 +71,9 @@ h4,
 	font-family: var(--font-heading);
     font-weight: var(--font-heading-weight, theme('fontWeight.semibold'));
     line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 h1, .heading {
@@ -90,7 +93,7 @@ h3 {
 
 h1,
 h2 {
-    max-width: 70ch;
+    max-width: 40ch;
 }
 
 a, [role="link"] {
@@ -137,6 +140,10 @@ summary {
 
 p {
     word-wrap: break-word;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70ch;
+    width: 100%;
 }
 
 fieldset {

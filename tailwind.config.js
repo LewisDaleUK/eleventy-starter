@@ -20,6 +20,7 @@ module.exports = {
 			light: '#f3f3f3',
 			dark: '#252525',
 			rose: '#9F1239',
+			blue: '#1d4ed8',
 			christmas: {
 				darkGreen: '#165B33',
 				lightGreen: '#146B3A',
@@ -51,8 +52,7 @@ module.exports = {
 			'size-5': 'clamp(2.49rem, 0.50rem + 9.96vw, 7.59rem)'
 		},
 		fontFamily: {
-			// sans: ['"Inter"', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif']
-			sans: '"Inter"',
+			sans: ['"Inter"', ...defaultTheme.fontFamily.sans],
 			mono: defaultTheme.fontFamily.mono,
 			spooky: ['"Creepy Pumkin"', ...defaultTheme.fontFamily.mono],
 			christmas: ['"Christmas"', ...defaultTheme.fontFamily.sans]

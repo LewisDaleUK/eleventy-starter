@@ -1,0 +1,9 @@
+.spot > * {
+	background-color: var(--spot-color, blue);
+	color: var(--spot-text-color, white);
+}
+
+.spot[data-spot-colour="blue"] {
+	--spot-color: var(--color-blue);
+	--spot-text-color: white;
+}

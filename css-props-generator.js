@@ -61,7 +61,7 @@ const generateCSSProps = () => {
   result = prettier.format(result, {parser: 'scss'});
 
   // Push this file into the CSS dir, ready to go
-  fs.writeFileSync('./css/custom-props.css', result);
+  fs.writeFileSync('./src/css/custom-props.css', result);
 };
 
 generateCSSProps();

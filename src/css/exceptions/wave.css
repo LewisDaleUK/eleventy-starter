@@ -1,0 +1,7 @@
+.wave {
+	fill: var(--spot-color, blue);
+	background-color: transparent;
+	display: block;
+	height: 6rem;
+	width: 100%;
+}

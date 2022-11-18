@@ -34,10 +34,9 @@ const imageShortcode = (src, alt, cls, sizes = defaultSizes, widths = [300, 600,
 }
 
 module.exports = function(eleventyConfig) { 
-    eleventyConfig.addPassthroughCopy("styles")
-    eleventyConfig.addPassthroughCopy("img");
+    eleventyConfig.addPassthroughCopy("src/img");
     eleventyConfig.addPassthroughCopy("src/favicon.ico");
-    eleventyConfig.addPassthroughCopy("fonts")
+    eleventyConfig.addPassthroughCopy("src/fonts")
     eleventyConfig.addPassthroughCopy("scripts");
     eleventyConfig.setDataDeepMerge(true);
     eleventyConfig.setFrontMatterParsingOptions({ excerpt: true });

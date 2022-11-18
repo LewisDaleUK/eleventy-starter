@@ -6,7 +6,7 @@
   "scripts": {
     "build": "run-s build:*",
     "build:props": "node css-props-generator.js",
-    "build:css": "postcss css/*.css --dir styles",
+    "build:css": "postcss src/css/*.css --dir _site/styles",
     "build:eleventy": "npx @11ty/eleventy",
     "serve": "npm-run-all -p serve:*",
     "serve:props": "nodemon --watch tailwind.config.js --watch css-props-generator.js css-props-generator.js",
