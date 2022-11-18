@@ -1,0 +1,28 @@
+[class*=stack] {
+	display: flex;
+	flex-direction: column;
+}
+
+.stack-sm {
+	--stack-spacing: var(--space-size-0);
+}
+
+.stack-md {
+	--stack-spacing: var(--space-size-base);
+}
+
+.stack-lg {
+	--stack-spacing: var(--space-size-1);
+}
+
+.stack-xl {
+	--stack-spacing: var(--space-size-2);
+}
+
+.stack-2xl {
+	--stack-spacing: var(--space-size-3);
+}
+
+[class*=stack] > * + * {
+	margin-block-start: var(--stack-spacing, 1.5rem)
+}

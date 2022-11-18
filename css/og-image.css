@@ -1,0 +1,42 @@
+@import 'fonts.css';
+@import 'custom-props.css';
+@import 'reset.css';
+
+@font-face {
+	font-family: "Pixeboy";
+	src: url("/fonts/Pixeboy.ttf") format("truetype");
+}
+
+html {
+	background: white;
+	font-family: theme('fontFamily.mono');
+}
+
+h1, h2, h3 {
+	font-family: theme('fontFamily.mono');
+	font-weight: theme('fontWeight.semibold');
+}
+
+h1 {
+	font-size: var(--text-size-4);
+	line-height: 1;
+}
+
+h2 {
+	font-size: var(--text-size-3);
+	line-height: 1.1;
+}
+
+h3 {
+	font-size: var(--text-size-2);
+	line-height: 1.2;
+}
+
+p {
+	font-size: var(--text-size-1);
+	margin-top: var(--space-size-0);
+}
+
+[class*=stack] {
+	--flow-space: var(--space-size-4);
+}

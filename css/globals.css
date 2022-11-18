@@ -1,0 +1,159 @@
+@import 'fonts.css';
+@import 'custom-props.css';
+@import 'reset.css';
+
+:root {
+    --font-family-spooky: theme('fontFamily.spooky');
+    --font-family-christmas: theme('fontFamily.christmas');
+}
+
+body {
+    background: var(--color-secondary);
+    color: var(--color-primary);
+
+	font-size: var(--text-size-1);
+	font-family: theme('fontFamily.sans');
+	--font-heading: theme('fontFamily.sans');
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --color-primary: var(--color-white);
+        --color-secondary: var(--color-dark);
+        --color-accent: var(--color-light);
+        --color-pumpkin-body-fill: var(--color-white);
+        --color-pumpkin-body-stroke: var(--color-black);
+        --color-pumpkin-accent-fill: var(--color-darkrose);
+        --color-pumpkin-accent-stroke: var(--color-black);
+    }
+}
+
+body[data-color-scheme="light"] {
+    --color-primary: var(--color-darkGrey);
+    --color-secondary: var(--color-lightGrey);
+    --color-accent: var(--color-slate);
+    --color-pumpkin-body-fill: var(--color-black);
+    --color-pumpkin-body-stroke: transparent;
+    --color-pumpkin-accent-fill: #FCEE21;
+    --color-pumpkin-accent-stroke: transparent;
+}
+
+body[data-color-scheme="dark"] {
+    --color-primary: var(--color-white);
+    --color-secondary: var(--color-dark);
+    --color-accent: var(--color-light);
+    --color-pumpkin-body-fill: var(--color-white);
+    --color-pumpkin-body-stroke: var(--color-black);
+    --color-pumpkin-accent-fill: var(--color-darkrose);
+    --color-pumpkin-accent-stroke: var(--color-black);
+}
+
+body[data-color-scheme="spooky"] {
+    --color-primary: var(--color-white);
+    --color-secondary: var(--color-black);
+    --color-accent: var(--color-amber);
+    --color-pumpkin-body-fill: var(--color-white);
+    --color-pumpkin-body-stroke: var(--color-black);
+    --color-pumpkin-accent-fill: var(--color-darkrose);
+    --color-pumpkin-accent-stroke: var(--color-black);
+
+    --text-nav-size: var(--text-size-2);
+
+    --font-heading: theme('fontFamily.spooky');
+    --font-nav: theme('fontFamily.spooky');
+}
+
+h1,
+h2,
+h3,
+h4,
+.heading {
+	font-family: var(--font-heading);
+    font-weight: var(--font-heading-weight, theme('fontWeight.semibold'));
+    line-height: 1.5;
+}
+
+h1, .heading {
+    @apply text-size-4;
+    line-height: 1;
+}
+
+h2 {
+    @apply text-size-3;
+    line-height: 1.2;
+}
+
+h3 {
+    @apply text-size-2;
+    line-height: 1.2;
+}
+
+h1,
+h2 {
+    max-width: 70ch;
+}
+
+a, [role="link"] {
+    color: inherit;
+    text-decoration-thickness: 0.15rem;
+    text-underline-offset: 0.3rem;
+    text-decoration: none;
+}
+
+a:hover, [role="link"]:hover {
+    text-decoration-style: solid;
+    text-decoration: underline;
+}
+
+a:visited, [role="link"]:visited {
+    color: inherit;
+}
+
+nav {
+    font-family: var(--font-nav);
+    font-size: var(--text-size-base);
+}
+
+[data-color-scheme="spooky"] header nav {
+    font-size: var(--text-size-2);
+}
+
+details ul li {
+    font-size: var(--text-size-base);
+}
+
+[data-color-scheme="spooky"] details ul li {
+    font-size: var(--text-size-1);
+}
+
+summary {
+    font-size: var(--text-size-1);
+    font-weight: theme('fontWeight.semibold');
+}
+
+[data-color-scheme="spooky"] summary {
+    font-size: var(--text-size-2);
+}
+
+p {
+    word-wrap: break-word;
+}
+
+fieldset {
+    --row-gutter: var(--space-size-1);
+}
+
+fieldset legend {
+    font-size: var(--text-size-1);
+}
+
+article ul {
+    list-style: disc;
+    padding-left: var(--space-size-1);
+}
+
+input, textarea {
+    border-color: var(--color-accent);
+    border-style: solid;
+    border-width: 1px;
+}

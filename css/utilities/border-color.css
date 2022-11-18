@@ -1,0 +1,11 @@
+.border-primary {
+	border-color: var(--color-primary);
+}
+
+.border-secondary {
+	border-color: var(--color-secondary);
+}
+
+.border-accent {
+	border-color: var(--color-accent);
+}

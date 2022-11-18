@@ -1,0 +1,46 @@
+/* VARIABLES GENERATED WITH TAILWIND CONFIG ON 18/11/2022.
+    Tokens location: ./tailwind.config.js */
+
+:root {
+  --color-black: black;
+  --color-white: white;
+  --color-slate: #475569;
+  --color-light: #f3f3f3;
+  --color-dark: #252525;
+  --color-rose: #9f1239;
+  --color-christmas-darkGreen: #165b33;
+  --color-christmas-lightGreen: #146b3a;
+  --color-christmas-yellow: #f8b229;
+  --color-christmas-lightRed: #ea4630;
+  --color-christmas-darkRed: #930c24;
+  --color-lightGrey: #f3f4f6;
+  --color-darkGrey: #374151;
+  --space-size-0: clamp(0.83rem, 0.9rem + -0.32vw, 0.67rem);
+  --space-base: clamp(1rem, 1rem + 0vw, 1rem);
+  --space-size-1: clamp(1.2rem, 1.08rem + 0.59vw, 1.5rem);
+  --space-size-2: clamp(1.44rem, 1.12rem + 1.58vw, 2.25rem);
+  --space-size-3: clamp(1.73rem, 1.09rem + 3.21vw, 3.38rem);
+  --space-size-4: clamp(2.07rem, 0.91rem + 5.83vw, 5.06rem);
+  --space-size-5: clamp(2.49rem, 0.5rem + 9.96vw, 7.59rem);
+  --text-size-0: clamp(0.83rem, 0.9rem + -0.32vw, 0.67rem);
+  --text-base: clamp(1rem, 1rem + 0vw, 1rem);
+  --text-size-1: clamp(1.2rem, 1.08rem + 0.59vw, 1.5rem);
+  --text-size-2: clamp(1.44rem, 1.12rem + 1.58vw, 2.25rem);
+  --text-size-3: clamp(1.73rem, 1.09rem + 3.21vw, 3.38rem);
+  --text-size-4: clamp(2.07rem, 0.91rem + 5.83vw, 5.06rem);
+  --text-size-5: clamp(2.49rem, 0.5rem + 9.96vw, 7.59rem);
+  --font-family-sans: "Inter";
+  --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --font-family-spooky: "Creepy Pumkin", ui-monospace, SFMono-Regular, Menlo,
+    Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-family-christmas: "Christmas", ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --screen-sm: 640px;
+  --screen-md: 768px;
+  --screen-lg: 1024px;
+  --screen-xl: 1280px;
+  --screen-2xl: 1536px;
+}

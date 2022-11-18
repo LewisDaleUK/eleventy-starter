@@ -1,0 +1,29 @@
+.grid {
+	display: grid;
+	gap: var(--grid-gutter, var(--space-size-2));
+	grid-template-columns:
+		repeat(var(--grid-placement, auto-fill),
+		minmax(var(--grid-min-item-size, 16rem), 1fr));
+}
+
+.grid[data-grid="[20 80]"] {
+	grid-template-columns: 9rem repeat( auto-fill, clamp(10rem,60vw,40rem));
+}
+
+.grid[data-grid-cols="2"] {
+	--grid-min-item-size: clamp(8rem, 50%, 16rem);
+}
+
+.grid[data-grid-cols="3"] {
+	--grid-min-item-size: clamp(8rem, 33%, 16rem);
+}
+
+.grid[data-grid-cols="4"] {
+	--grid-min-item-size: clamp(8rem, 25%, 16rem);
+
+}
+
+.grid[data-grid-cols="5"] {
+	--grid-placement: auto-fit;
+	--grid-min-item-size: clamp(5rem, 15%, 8rem);
+} 

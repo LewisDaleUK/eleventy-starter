@@ -1,0 +1,19 @@
+[class*=wrapper] {
+	margin-left: var(--wrapper-margin, auto);
+	margin-right: var(--wrapper-margin, auto);
+	max-width: var(--wrapper-width, var(--screen-lg));
+	padding: var(--wrapper-padding, var(--space-size-0));
+	width: 100%;
+}
+
+.wrapper-lg {
+	--wrapper-width: var(--screen-lg);
+}
+
+.wrapper-md {
+	--wrapper-width: var(--screen-md);
+}
+
+.wrapper-sm {
+	--wrapper-width: var(--screen-sm);
+}

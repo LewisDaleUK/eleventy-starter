@@ -1,0 +1,10 @@
+.row {
+	display: flex;
+	flex-direction: row;
+	gap: var(--row-gutter, var(--space-size-2));
+	align-items: center;
+}
+
+.row > * {
+	flex-grow: 1;
+}
